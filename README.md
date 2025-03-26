@@ -1,12 +1,11 @@
-<h2>Create forms and tables on the page "Effective Solutions for Your Business". Home Work N5</h2>
+<h2>Principles of responsive web design "Effective Solutions for Your Business". Home Work N6</h2>
 
-<h3>Module 5 Objectives:</h3>
+<h3>Module 65 Objectives:</h3>
 <ul>
-    <li>understand what HTML forms are and how they work</li>
-    <li>distinguish between the main types of elements in forms (form, label, input, etc.)</li>
-    <li>stylize forms on a page</li>
-    <li>be able to group related form elements</li>
-    <li>create different types of forms</li>
-    <li>apply a set of special pseudo-classes for form elements</li>
-    <li>know the tags for creating tables and be able to group cells in tables</li>
+    <li>understand how web and mobile browsers display a page</li>
+    <li>know the syntax, types and functions of media queries</li>
+    <li>distinguish between logical operators and, or, not and be able to use them</li>
+    <li>know what the Mobile First approach is and how to implement it in a project</li>
+    <li>know the principles of displaying images on different types of devices</li>
+    <li>be able to implement image responsiveness for different types of screens</li>
 </ul>
