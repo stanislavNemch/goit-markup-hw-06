@@ -40,7 +40,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
-                <button class="hero-button" type="button">Order Service</button>
+                <button class="hero-button" type="button" onclick="showForm()">Order Service</button>
             </div>
         </section>
 
@@ -411,9 +411,11 @@
         </div>
     </footer>
 
-    <div id="contactForm" class="contact-form-container is-open">
+    <div class="overlay"></div>
+
+    <div id="contactForm" class="contact-form-container">
         <div class="contact-form-modal">
-            <button class="close-button" type="button">
+            <button class="close-button" type="button" onclick="hideForm()">
                 <svg class="close-icon" width="8" height="8">
                     <use href="./images/icons.svg#close-black-18dp"></use>
                 </svg>
@@ -467,7 +469,7 @@
             </form>
         </div>
     </div>
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>

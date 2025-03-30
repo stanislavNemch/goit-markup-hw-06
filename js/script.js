@@ -1,9 +1,9 @@
 function showForm() {
-    document.getElementById("contactForm").style.display = "block";
-    document.querySelector(".overlay").style.display = "block";
+    document.getElementById("contactForm").classList.add("is-open");
+    document.querySelector(".overlay").classList.add("is-open");
 }
 
 function hideForm() {
-    document.getElementById("contactForm").style.display = "none";
-    document.querySelector(".overlay").style.display = "none";
+    document.getElementById("contactForm").classList.remove("is-open");
+    document.querySelector(".overlay").classList.remove("is-open");
 }
