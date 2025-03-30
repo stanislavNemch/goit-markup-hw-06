@@ -46,7 +46,7 @@ ul {
 
 /* Базові стилі для мобільних пристроїв (320px і більше) */
 .container {
-    width: 100%;
+    width: 320px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -530,18 +530,18 @@ a:focus {
 
 /* Оверлей для затемнения фона */
 .overlay {
-    display: block; /* Оставляем display: block для работы с visibility */
+    display: block;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(46, 47, 66, 0.4); /* Затемненный фон */
+    background-color: rgba(46, 47, 66, 0.4);
     opacity: 0; /* Начальное состояние - прозрачный */
     visibility: hidden; /* Начальное состояние - невидимый */
     z-index: 999; /* Под формой, но выше остального контента */
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавный переход */
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Открытый оверлей */
@@ -553,8 +553,6 @@ a:focus {
 /* Для экранов от 768px */
 @media (min-width: 768px) {
     .contact-form-container {
-        padding: 20px;
-        font-size: 16px;
         width: 70%;
     }
 }
@@ -562,8 +560,6 @@ a:focus {
 /* Для экранов от 1158px */
 @media (min-width: 1158px) {
     .contact-form-container {
-        padding: 30px;
-        font-size: 18px;
         width: 50%;
     }
 }
@@ -765,12 +761,7 @@ a:focus {
 /* Для екранів від 768px */
 @media (min-width: 768px) {
     .container {
-        width: 720px;
-    }
-
-    .contact-form-container {
-        padding: 20px;
-        font-size: 16px;
+        width: 768px;
     }
 }
 
@@ -778,11 +769,6 @@ a:focus {
 @media (min-width: 1158px) {
     .container {
         width: 1158px;
-    }
-
-    .contact-form-container {
-        padding: 30px;
-        font-size: 18px;
     }
 }
 
