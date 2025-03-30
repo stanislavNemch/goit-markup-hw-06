@@ -517,6 +517,7 @@ a:focus {
 .contact-form-container {
     width: 90%;
     max-width: 400px;
+    margin: 0 auto;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -565,12 +566,6 @@ a:focus {
 }
 
 .contact-form-modal {
-    width: 408px;
-    min-height: 584px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
         0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background: #fcfcfc;
