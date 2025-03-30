@@ -1,6 +1,6 @@
 <h2>Principles of responsive web design "Effective Solutions for Your Business". Home Work N6</h2>
 
-<h3>Module 65 Objectives:</h3>
+<h3>Module 6 Objectives:</h3>
 <ul>
     <li>understand how web and mobile browsers display a page</li>
     <li>know the syntax, types and functions of media queries</li>
