@@ -16,107 +16,169 @@
 
 <body>
     <header class="header-block">
-        <div class="flex-block container">
-            <nav class="flex-block nav-header-block">
+        <div class="container">
+            <nav class="nav-header-block">
                 <a href="./index.html" class="logo">Web<span>Studio</span></a>
-                <ul class="nav-list">
-                    <li class="nav-li-menu"><a href="./index.html" class="nav-link">Studio</a></li>
-                    <li class="nav-li-menu"><a href="" class="nav-link">Portfolio</a></li>
-                    <li class="nav-li-menu"><a href="" class="nav-link">Contacts</a></li>
+                <ul class="main-nav-list">
+                    <li><a href="./index.html" class="nav-link current">Studio</a></li>
+                    <li><a href="" class="nav-link">Portfolio</a></li>
+                    <li><a href="" class="nav-link">Contacts</a></li>
                 </ul>
             </nav>
             <address class="contacts">
-                <ul class="nav-list">
-                    <li class="nav-li-menu"><a href="mailto:info@devstudio.com"
-                            class="contacts-link">info@devstudio.com</a></li>
-                    <li class="nav-li-menu"><a href="tel:+110001111111" class="contacts-link">+11 (000) 111-11-11</a>
-                    </li>
+                <ul class="contacts-list">
+                    <li><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
+                    <li><a href="tel:+110001111111" class="contacts-link">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+            <button type="button" class="mobile-menu-open-btn" aria-label="Open mobile menu" aria-expanded="false"
+                aria-controls="mobile-menu">
+                <svg class="mobile-menu-open-btn-icon" width="24" height="24">
+                    <use href="./images/icons.svg#heroicons-solid"></use>
+                </svg>
+            </button>
         </div>
     </header>
 
-    <main class="main-block">
+    <div class="mobile-menu" id="mobile-menu">
+        <button class="mobile-menu-close-btn close-button" type="button" aria-label="Close mobile menu">
+            <svg class="mobile-menu-close-icon close-icon" width="8" height="8">
+                <use href="./images/icons.svg#close-black-18dp"></use>
+            </svg>
+        </button>
+
+        <nav class="mobile-menu-nav">
+            <ul class="mobile-nav-list">
+                <li><a href="./index.html" class="mobile-nav-link current">Studio</a></li>
+                <li><a href="" class="mobile-nav-link">Portfolio</a></li>
+                <li><a href="" class="mobile-nav-link">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-menu-bottom">
+            <address class="mobile-menu-contacts">
+                <ul class="mobile-contacts-list">
+                    <li><a href="tel:+110001111111" class="mobile-contacts-link phone">+11 (000) 111-11-11</a></li>
+                    <li><a href="mailto:info@devstudio.com" class="mobile-contacts-link email">info@devstudio.com</a>
+                    </li>
+                </ul>
+            </address>
+
+            <div class="mobile-menu-socials">
+                <ul class="mobile-social-list">
+                    <li class="social-item">
+                        <a class="social-link" href="https://www.instagram.com" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram link">
+                            <svg class="social-icon" width="16" height="16">
+                                <use href="./images/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"
+                            aria-label="Twitter link">
+                            <svg class="social-icon" width="16" height="16">
+                                <use href="./images/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook link">
+                            <svg class="social-icon" width="16" height="16">
+                                <use href="./images/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+                            aria-label="LinkedIn link">
+                            <svg class="social-icon" width="16" height="16">
+                                <use href="./images/sprite.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <main>
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
-                <button class="hero-button" type="button" onclick="showForm()">Order Service</button>
+                <button class="hero-button" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
 
-        <section class="features-block">
+        <section class="features-block section">
             <div class="container">
-                <h2 class="visually-hidden">About Us</h2>
+                <h2 class="visually-hidden">Our Features</h2>
                 <ul class="features-list">
-                    <li class="features-width-li">
+                    <li class="features-item">
                         <div class="features-img">
                             <svg class="features-icon" width="64" height="64">
                                 <use href="./images/icons.svg#antenna"></use>
                             </svg>
                         </div>
                         <h3 class="features-title">Strategy</h3>
-                        <p class="features-text">Our goal is to identify the business problem to
-                            walk away with the perfect and creative solution.
-                        </p>
+                        <p class="features-text">Our goal is to identify the business problem to walk away with the
+                            perfect and creative solution.</p>
                     </li>
-                    <li class="features-width-li">
+                    <li class="features-item">
                         <div class="features-img">
                             <svg class="features-icon" width="64" height="64">
                                 <use href="./images/icons.svg#clock"></use>
                             </svg>
                         </div>
                         <h3 class="features-title">Punctuality</h3>
-                        <p class="features-text">Bring the key message to the brand's audience for
-                            the best price within the shortest possible time.
-                        </p>
+                        <p class="features-text">Bring the key message to the brand's audience for the best price within
+                            the shortest possible time.</p>
                     </li>
-                    <li class="features-width-li">
+                    <li class="features-item">
                         <div class="features-img">
                             <svg class="features-icon" width="64" height="64">
                                 <use href="./images/icons.svg#diagram"></use>
                             </svg>
                         </div>
                         <h3 class="features-title">Diligence</h3>
-                        <p class="features-text">Research and confirm brands with the strongest
-                            digital growth opportunities and minimize risk.
-                        </p>
+                        <p class="features-text">Research and confirm brands with the strongest digital growth
+                            opportunities and minimize risk.</p>
                     </li>
-                    <li class="features-width-li">
+                    <li class="features-item">
                         <div class="features-img">
                             <svg class="features-icon" width="64" height="64">
                                 <use href="./images/icons.svg#astronaut"></use>
                             </svg>
                         </div>
                         <h3 class="features-title">Technologies</h3>
-                        <p class="features-text">Design practice focused on digital experiences.
-                            We bring forth a deep passion for problem-solving.
-                        </p>
+                        <p class="features-text">Design practice focused on digital experiences. We bring forth a deep
+                            passion for problem-solving.</p>
                     </li>
                 </ul>
             </div>
         </section>
 
-        <section class="team-block">
+        <section class="team-block section">
             <div class="container">
                 <h2 class="section-title">Our Team</h2>
-                <ul class="ul-flex-block">
-                    <li class="team-list-li">
-                        <img src="./images/mark_guerrero.jpg" alt="Mark Guerrero" width="264">
-                        <div class="features-team-block">
+                <ul class="team-list">
+                    <li class="team-list-item"> <img src="./images/mark_guerrero.jpg" alt="Mark Guerrero" width="264"
+                            height="260">
+                        <div class="team-text-container">
                             <h3 class="features-title">Mark Guerrero</h3>
                             <p class="features-text">Product Designer</p>
-                            <ul class="ul-flex-block">
+                            <ul class="social-list">
                                 <li class="social-item">
                                     <a class="social-link" href="https://www.instagram.com" target="_blank"
-                                        rel="noopener noreferer">
-                                        <svg class="social-icon" width="16" height="16">
+                                        rel="noopener noreferrer"> <svg class="social-icon" width="16" height="16">
                                             <use href="./images/sprite.svg#instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="social-item">
                                     <a class="social-link" href="https://www.twitter.com" target="_blank"
-                                        rel="noopener noreferer">
+                                        rel="noopener noreferrer">
                                         <svg class="social-icon" width="16" height="16">
                                             <use href="./images/sprite.svg#twitter"></use>
                                         </svg>
@@ -124,7 +186,7 @@
                                 </li>
                                 <li class="social-item">
                                     <a class="social-link" href="https://www.facebook.com" target="_blank"
-                                        rel="noopener noreferer">
+                                        rel="noopener noreferrer">
                                         <svg class="social-icon" width="16" height="16">
                                             <use href="./images/sprite.svg#facebook"></use>
                                         </svg>
@@ -132,7 +194,7 @@
                                 </li>
                                 <li class="social-item">
                                     <a class="social-link" href="https://www.linkedin.com" target="_blank"
-                                        rel="noopener noreferer">
+                                        rel="noopener noreferrer">
                                         <svg class="social-icon" width="16" height="16">
                                             <use href="./images/sprite.svg#linkedin"></use>
                                         </svg>
@@ -141,15 +203,15 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team-list-li">
-                        <img src="./images/tom_ford.jpg" alt="Tom Ford" width="264">
-                        <div class="features-team-block">
+                    <li class="team-list-item">
+                        <img src="./images/tom_ford.jpg" alt="Tom Ford" width="264" height="260">
+                        <div class="team-text-container">
                             <h3 class="features-title">Tom Ford</h3>
                             <p class="features-text">Frontend Developer</p>
-                            <ul class="ul-flex-block">
+                            <ul class="social-list">
                                 <li class="social-item">
                                     <a class="social-link" href="https://www.instagram.com" target="_blank"
-                                        rel="noopener noreferer">
+                                        rel="noopener noreferrer">
                                         <svg class="social-icon" width="16" height="16">
                                             <use href="./images/sprite.svg#instagram"></use>
                                         </svg>
@@ -157,7 +219,7 @@
                                 </li>
                                 <li class="social-item">
                                     <a class="social-link" href="https://www.twitter.com" target="_blank"
-                                        rel="noopener noreferer">
+                                        rel="noopener noreferrer">
                                         <svg class="social-icon" width="16" height="16">
                                             <use href="./images/sprite.svg#twitter"></use>
                                         </svg>
@@ -165,7 +227,7 @@
                                 </li>
                                 <li class="social-item">
                                     <a class="social-link" href="https://www.facebook.com" target="_blank"
-                                        rel="noopener noreferer">
+                                        rel="noopener noreferrer">
                                         <svg class="social-icon" width="16" height="16">
                                             <use href="./images/sprite.svg#facebook"></use>
                                         </svg>
@@ -173,7 +235,7 @@
                                 </li>
                                 <li class="social-item">
                                     <a class="social-link" href="https://www.linkedin.com" target="_blank"
-                                        rel="noopener noreferer">
+                                        rel="noopener noreferrer">
                                         <svg class="social-icon" width="16" height="16">
                                             <use href="./images/sprite.svg#linkedin"></use>
                                         </svg>
@@ -182,15 +244,15 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team-list-li">
-                        <img src="./images/camila_garcia.jpg" alt="Camila Garcia" width="264">
-                        <div class="features-team-block">
+                    <li class="team-list-item">
+                        <img src="./images/camila_garcia.jpg" alt="Camila Garcia" width="264" height="260">
+                        <div class="team-text-container">
                             <h3 class="features-title">Camila Garcia</h3>
                             <p class="features-text">Marketing</p>
-                            <ul class="ul-flex-block">
+                            <ul class="social-list">
                                 <li class="social-item">
                                     <a class="social-link" href="https://www.instagram.com" target="_blank"
-                                        rel="noopener noreferer">
+                                        rel="noopener noreferrer">
                                         <svg class="social-icon" width="16" height="16">
                                             <use href="./images/sprite.svg#instagram"></use>
                                         </svg>
@@ -198,7 +260,7 @@
                                 </li>
                                 <li class="social-item">
                                     <a class="social-link" href="https://www.twitter.com" target="_blank"
-                                        rel="noopener noreferer">
+                                        rel="noopener noreferrer">
                                         <svg class="social-icon" width="16" height="16">
                                             <use href="./images/sprite.svg#twitter"></use>
                                         </svg>
@@ -206,7 +268,7 @@
                                 </li>
                                 <li class="social-item">
                                     <a class="social-link" href="https://www.facebook.com" target="_blank"
-                                        rel="noopener noreferer">
+                                        rel="noopener noreferrer">
                                         <svg class="social-icon" width="16" height="16">
                                             <use href="./images/sprite.svg#facebook"></use>
                                         </svg>
@@ -214,7 +276,7 @@
                                 </li>
                                 <li class="social-item">
                                     <a class="social-link" href="https://www.linkedin.com" target="_blank"
-                                        rel="noopener noreferer">
+                                        rel="noopener noreferrer">
                                         <svg class="social-icon" width="16" height="16">
                                             <use href="./images/sprite.svg#linkedin"></use>
                                         </svg>
@@ -223,15 +285,15 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team-list-li">
-                        <img src="./images/daniel_wilson.jpg" alt="Daniel Wilson" width="264">
-                        <div class="features-team-block">
+                    <li class="team-list-item">
+                        <img src="./images/daniel_wilson.jpg" alt="Daniel Wilson" width="264" height="260">
+                        <div class="team-text-container">
                             <h3 class="features-title">Daniel Wilson</h3>
                             <p class="features-text">UI Designer</p>
-                            <ul class="ul-flex-block">
+                            <ul class="social-list">
                                 <li class="social-item">
                                     <a class="social-link" href="https://www.instagram.com" target="_blank"
-                                        rel="noopener noreferer">
+                                        rel="noopener noreferrer">
                                         <svg class="social-icon" width="16" height="16">
                                             <use href="./images/sprite.svg#instagram"></use>
                                         </svg>
@@ -239,7 +301,7 @@
                                 </li>
                                 <li class="social-item">
                                     <a class="social-link" href="https://www.twitter.com" target="_blank"
-                                        rel="noopener noreferer">
+                                        rel="noopener noreferrer">
                                         <svg class="social-icon" width="16" height="16">
                                             <use href="./images/sprite.svg#twitter"></use>
                                         </svg>
@@ -247,7 +309,7 @@
                                 </li>
                                 <li class="social-item">
                                     <a class="social-link" href="https://www.facebook.com" target="_blank"
-                                        rel="noopener noreferer">
+                                        rel="noopener noreferrer">
                                         <svg class="social-icon" width="16" height="16">
                                             <use href="./images/sprite.svg#facebook"></use>
                                         </svg>
@@ -255,7 +317,7 @@
                                 </li>
                                 <li class="social-item">
                                     <a class="social-link" href="https://www.linkedin.com" target="_blank"
-                                        rel="noopener noreferer">
+                                        rel="noopener noreferrer">
                                         <svg class="social-icon" width="16" height="16">
                                             <use href="./images/sprite.svg#linkedin"></use>
                                         </svg>
@@ -268,85 +330,95 @@
             </div>
         </section>
 
-        <section class="portfolio-block">
+        <section class="portfolio-block section">
             <div class="container">
                 <h2 class="section-title">Our Portfolio</h2>
-                <ul class="flex-block portfolio-list">
+                <ul class="portfolio-list">
                     <li class="portfolio-item">
-                        <div class="portfolio-container">
-                            <img src="./images/banking_app.jpg" alt="Banking App" width="360">
-                            <p class="paragraph-hidden">14 Stylish and User-Friendly App Design Concepts · Task Manager
-                                App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
-                        </div>
-                        <div class="portfolio-text-container">
-                            <h3 class="features-title">Banking App</h3>
-                            <p class="features-text">App</p>
-                        </div>
+                        <a href="#" class="portfolio-link">
+                            <div class="portfolio-container">
+                                <img src="./images/banking_app.jpg" alt="Banking App" width="360" height="300">
+                                <p class="portfolio-overlay">14 Stylish and User-Friendly App Design Concepts · Task
+                                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
+                                </p>
+                            </div>
+                            <div class="portfolio-text-container">
+                                <h3 class="features-title">Banking App</h3>
+                                <p class="features-text">App</p>
+                            </div>
+                        </a>
                     </li>
                     <li class="portfolio-item">
-                        <div class="portfolio-container">
-                            <img src="./images/cashless_payment.jpg" alt="Cashless Payment" width="360">
-                            <p class="paragraph-hidden">14 Stylish and User-Friendly App Design Concepts · Task Manager
-                                App
-                                · Calorie Tracker App · Exotic Fruit Ecommerce App ·
-                                Cloud Storage App</p>
-                        </div>
-                        <div class="portfolio-text-container">
-                            <h3 class="features-title">Cashless Payment</h3>
-                            <p class="features-text">Marketing</p>
-                        </div>
+                        <a href="#" class="portfolio-link">
+                            <div class="portfolio-container">
+                                <img src="./images/cashless_payment.jpg" alt="Cashless Payment" width="360"
+                                    height="300">
+                                <p class="portfolio-overlay">14 Stylish and User-Friendly App Design Concepts · Task
+                                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
+                                </p>
+                            </div>
+                            <div class="portfolio-text-container">
+                                <h3 class="features-title">Cashless Payment</h3>
+                                <p class="features-text">Marketing</p>
+                            </div>
+                        </a>
                     </li>
                     <li class="portfolio-item">
-                        <div class="portfolio-container">
-                            <img src="./images/meditation_app.jpg" alt="Meditation App" width="360">
-                            <p class="paragraph-hidden">14 Stylish and User-Friendly App Design Concepts · Task Manager
-                                App
-                                · Calorie Tracker App · Exotic Fruit Ecommerce App ·
-                                Cloud Storage App</p>
-                        </div>
-                        <div class="portfolio-text-container">
-                            <h3 class="features-title">Meditation App</h3>
-                            <p class="features-text">App</p>
-                        </div>
+                        <a href="#" class="portfolio-link">
+                            <div class="portfolio-container">
+                                <img src="./images/meditation_app.jpg" alt="Meditation App" width="360" height="300">
+                                <p class="portfolio-overlay">14 Stylish and User-Friendly App Design Concepts · Task
+                                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
+                                </p>
+                            </div>
+                            <div class="portfolio-text-container">
+                                <h3 class="features-title">Meditation App</h3>
+                                <p class="features-text">App</p>
+                            </div>
+                        </a>
                     </li>
                     <li class="portfolio-item">
-                        <div class="portfolio-container">
-                            <img src="./images/taxi_service.jpg" alt="Taxi Service" width="360">
-                            <p class="paragraph-hidden">14 Stylish and User-Friendly App Design Concepts · Task Manager
-                                App
-                                · Calorie Tracker App · Exotic Fruit Ecommerce App ·
-                                Cloud Storage App</p>
-                        </div>
-                        <div class="portfolio-text-container">
-                            <h3 class="features-title">Taxi Service</h3>
-                            <p class="features-text">Marketing</p>
-                        </div>
+                        <a href="#" class="portfolio-link">
+                            <div class="portfolio-container">
+                                <img src="./images/taxi_service.jpg" alt="Taxi Service" width="360" height="300">
+                                <p class="portfolio-overlay">14 Stylish and User-Friendly App Design Concepts · Task
+                                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
+                                </p>
+                            </div>
+                            <div class="portfolio-text-container">
+                                <h3 class="features-title">Taxi Service</h3>
+                                <p class="features-text">Marketing</p>
+                            </div>
+                        </a>
                     </li>
                     <li class="portfolio-item">
-                        <div class="portfolio-container">
-                            <img src="./images/screen_illustrations.jpg" alt="Screen Illustrations" width="360">
-                            <p class="paragraph-hidden">14 Stylish and User-Friendly App Design Concepts · Task Manager
-                                App
-                                · Calorie Tracker App · Exotic Fruit Ecommerce App ·
-                                Cloud Storage App</p>
-                        </div>
-                        <div class="portfolio-text-container">
-                            <h3 class="features-title">Screen Illustrations</h3>
-                            <p class="features-text">Design</p>
-                        </div>
+                        <a href="#" class="portfolio-link">
+                            <div class="portfolio-container">
+                                <img src="./images/screen_illustrations.jpg" alt="Screen Illustrations" width="360"
+                                    height="300">
+                                <p class="portfolio-overlay">14 Stylish and User-Friendly App Design Concepts · Task
+                                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
+                                </p>
+                            </div>
+                            <div class="portfolio-text-container">
+                                <h3 class="features-title">Screen Illustrations</h3>
+                                <p class="features-text">Design</p>
+                            </div>
+                        </a>
                     </li>
                     <li class="portfolio-item">
-                        <div class="portfolio-container">
-                            <img src="./images/online_courses.jpg" alt="Online Courses" width="360">
-                            <p class="paragraph-hidden">14 Stylish and User-Friendly App Design Concepts · Task Manager
-                                App
-                                · Calorie Tracker App · Exotic Fruit Ecommerce App ·
-                                Cloud Storage App</p>
-                        </div>
-                        <div class="portfolio-text-container">
-                            <h3 class="features-title">Online Courses</h3>
-                            <p class="features-text">Marketing</p>
-                        </div>
+                        <a href="#" class="portfolio-link">
+                            <div class="portfolio-container">
+                                <img src="./images/online_courses.jpg" alt="Online Courses" width="360" height="300">
+                                <p class="portfolio-overlay">14 Stylish and User-Friendly App Design Concepts · Task
+                                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
+                                </p>
+                            </div>
+                            <div class="portfolio-text-container">
+                                <h3 class="features-title">Online Courses</h3>
+                                <p class="features-text">Marketing</p>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -354,11 +426,10 @@
     </main>
 
     <footer class="footer-block">
-        <div class="container flex-block">
+        <div class="container">
             <div class="footer-block-logo">
                 <a href="./index.html" class="logo-footer">Web<span class="span-footer">Studio</span></a>
-                <p class="text-footer">Increase the flow of customers and sales for your business with digital
-                    marketing
+                <p class="text-footer">Increase the flow of customers and sales for your business with digital marketing
                     & growth solutions.</p>
             </div>
             <div class="footer-block-icon">
@@ -366,28 +437,30 @@
                 <ul class="footer-social-list">
                     <li class="social-item">
                         <a class="social-link" href="https://www.instagram.com" target="_blank"
-                            rel="noopener noreferer">
+                            rel="noopener noreferrer">
                             <svg class="social-icon" width="24" height="24">
                                 <use href="./images/sprite.svg#instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social-item">
-                        <a class="social-link" href="https://www.twitter.com" target="_blank" rel="noopener noreferer">
+                        <a class="social-link" href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
                             <svg class="social-icon" width="24" height="24">
                                 <use href="./images/sprite.svg#twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social-item">
-                        <a class="social-link" href="https://www.facebook.com" target="_blank" rel="noopener noreferer">
+                        <a class="social-link" href="https://www.facebook.com" target="_blank"
+                            rel="noopener noreferrer">
                             <svg class="social-icon" width="24" height="24">
                                 <use href="./images/sprite.svg#facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social-item">
-                        <a class="social-link" href="https://www.linkedin.com" target="_blank" rel="noopener noreferer">
+                        <a class="social-link" href="https://www.linkedin.com" target="_blank"
+                            rel="noopener noreferrer">
                             <svg class="social-icon" width="24" height="24">
                                 <use href="./images/sprite.svg#linkedin"></use>
                             </svg>
@@ -399,7 +472,8 @@
                 <p class="footer-title">Subscribe</p>
                 <form class="footer-form" action="#" method="post">
                     <label class="footer-subscribe-label">
-                        <input class="footer-input" type="email" name="email" placeholder="E-mail" required>
+                        <span class="visually-hidden">E-mail for subscription</span> <input class="footer-input"
+                            type="email" name="email" placeholder="E-mail" required>
                     </label>
                     <button class="footer-button" type="submit">Subscribe
                         <svg class="icon-send" width="24" height="24">
@@ -411,12 +485,9 @@
         </div>
     </footer>
 
-    <div class="overlay"></div>
-
-    <div id="contactForm" class="contact-form-container">
-        <div class="contact-form-modal">
-            <button class="close-button" type="button" onclick="hideForm()">
-                <svg class="close-icon" width="8" height="8">
+    <div class="overlay" data-modal>
+        <div class="contact-form-container"> <button class="close-button" type="button" data-modal-close> <svg
+                    class="close-icon" width="8" height="8">
                     <use href="./images/icons.svg#close-black-18dp"></use>
                 </svg>
             </button>
@@ -425,8 +496,8 @@
                 <div class="form-container">
                     <label for="user-name" class="contact-form-label">Name</label>
                     <div class="input-block-container">
-                        <input type="text" id="user-name" name="user-name" class="contact-form-input">
-                        <svg class="contact-form-icon" width="18" height="24">
+                        <input type="text" id="user-name" name="user-name" class="contact-form-input" required> <svg
+                            class="contact-form-icon" width="18" height="24">
                             <use href="./images/icons.svg#person-black"></use>
                         </svg>
                     </div>
@@ -434,8 +505,8 @@
                 <div class="form-container">
                     <label for="phone" class="contact-form-label">Phone</label>
                     <div class="input-block-container">
-                        <input type="tel" id="phone" name="phone" class="contact-form-input">
-                        <svg class="contact-form-icon" width="18" height="24">
+                        <input type="tel" id="phone" name="phone" class="contact-form-input" required> <svg
+                            class="contact-form-icon" width="18" height="24">
                             <use href="./images/icons.svg#phone-black"></use>
                         </svg>
                     </div>
@@ -443,27 +514,28 @@
                 <div class="form-container">
                     <label for="email" class="contact-form-label">Email</label>
                     <div class="input-block-container">
-                        <input type="email" id="email" name="email" class="contact-form-input">
-                        <svg class="contact-form-icon" width="18" height="24">
+                        <input type="email" id="email" name="email" class="contact-form-input" required> <svg
+                            class="contact-form-icon" width="18" height="24">
                             <use href="./images/icons.svg#email-black"></use>
                         </svg>
                     </div>
                 </div>
-                <div class="form-container">
-                    <label for="user-comment" class="contact-form-label">Comment</label>
+                <div class="form-container-comment"> <label for="user-comment"
+                        class="contact-form-label">Comment</label>
                     <textarea id="user-comment" name="user-comment" placeholder="Text input"
-                        class="contact-form-input contact-form-textarea"></textarea>
+                        class="contact-form-textarea"></textarea>
                 </div>
                 <div class="checkbox-container">
                     <input type="checkbox" id="user-privacy" name="user-privacy" value="true"
-                        class="contact-form-checkbox visually-hidden">
-                    <label for="user-privacy" class="checkbox-label">
+                        class="contact-form-checkbox visually-hidden" required> <label for="user-privacy"
+                        class="checkbox-label">
                         <span class="checkbox-span">
                             <svg class="checkbox-icon" width="10" height="8">
                                 <use href="./images/icons.svg#icon-check"></use>
-                            </svg> </span>
-                        I accept the terms and conditions of the <a href="#" class="checkbox-link">Privacy
-                            Policy</a></label>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the <a href="#" class="checkbox-link">Privacy Policy</a>
+                    </label>
                 </div>
                 <button type="submit" class="contact-form-button">Send</button>
             </form>
