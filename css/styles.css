@@ -960,10 +960,9 @@ body.no-scroll {
 /* ==========================================================================
            Планшетные стили (от 768px)
            ========================================================================== */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .container {
-        width: 768px;
-        padding: 0 16px;
+        max-width: 768px;
     }
 
     .section {
@@ -1111,9 +1110,9 @@ body.no-scroll {
 /* ==========================================================================
            Десктопные стили (от 1158px)
            ========================================================================== */
-@media (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
     .container {
-        width: 1158px;
+        max-width: 1158px;
         padding: 0 15px;
     }
 
@@ -1160,6 +1159,7 @@ body.no-scroll {
         width: 264px;
         height: 112px;
         border-radius: 4px;
+        border: 1px solid #8e8f99;
         margin-bottom: 8px;
     }
     .features-list {
