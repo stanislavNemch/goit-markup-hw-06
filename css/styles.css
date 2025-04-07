@@ -358,6 +358,16 @@ body.no-scroll {
     margin: 0 auto;
 }
 
+@media (min-resolution: 2x) {
+    .hero {
+        background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+            ),
+            url(../images/img-mobile/people-office-mobile_2x.jpg);
+    }
+}
+
 .hero-title {
     font-weight: 700;
     font-size: 36px;
@@ -1019,6 +1029,17 @@ body.no-scroll {
             ),
             url(../images/img-tablet/people-office-table.jpg); /* Фон для планшета */
     }
+
+    @media (min-resolution: 2x) {
+        .hero {
+            background-image: linear-gradient(
+                    rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)
+                ),
+                url(../images/img-tablet/people-office-table-2X.jpg);
+        }
+    }
+
     .hero-title {
         font-size: 56px;
         line-height: 1.07;
@@ -1153,8 +1174,19 @@ body.no-scroll {
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)
             ),
-            url(../images/people-office-1.jpg); /* Фон для десктопа */
+            url(../images/img-desc/people-office-desc.jpg); /* Фон для десктопа */
     }
+
+    @media (min-resolution: 2x) {
+        .hero {
+            background-image: linear-gradient(
+                    rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)
+                ),
+                url(../images/img-desc/people-office-desc_2x.jpg);
+        }
+    }
+
     .hero-title {
         margin-bottom: 48px;
     }
